@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "Expo Router Typescript",
+    "slug": "expo-router-typescript",
+    "scheme": "app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/images/app-icon.png",
+    "splash": {
+      "image": "./src/assets/images/splash.png",
+      "backgroundColor": "#222"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/images/app-icon.png",
+        "backgroundColor": "#222"
+      }
+    },
+    "web": {
+      "favicon": "./src/assets/images/app-icon.png",
+      "bundler": "metro"
+    }
+  }
+}
