@@ -6,6 +6,7 @@ import Home from 'src/screens/Home'
 
 jest.mock('expo-router', () => ({ Stack: { Screen: 'Screen' } }))
 jest.mock('src/components/LinkButton', () => 'LinkButton')
+jest.mock('src/hooks/useCacheAssets', () => () => true)
 
 describe('src/screens/Home', () => {
   const HomeComponent = (
@@ -16,13 +17,14 @@ describe('src/screens/Home', () => {
 
   it('renders correctly', () => {
     const home = create(HomeComponent).toJSON() as ReactTestRendererJSON
-    const screen = home.children![0] as ReactTestRendererJSON
-    const title = home.children![1] as ReactTestRendererJSON
-    const text = home.children![2] as ReactTestRendererJSON
-    const linkButton = home.children![3] as ReactTestRendererJSON
+    const layout = home.children![0] as ReactTestRendererJSON
+    const screen = layout.children![0] as ReactTestRendererJSON
+    const title = layout.children![1] as ReactTestRendererJSON
+    const text = layout.children![2] as ReactTestRendererJSON
+    const linkButton = layout.children![3] as ReactTestRendererJSON
 
     expect(home.type).toBe('View')
-    expect(home.props.testID).toBe('home-screen')
+    expect(home.props.testID).toBe('home-screen-layout')
 
     expect(screen.type).toBe('Screen')
 
@@ -31,5 +33,7 @@ describe('src/screens/Home', () => {
 
     expect(text.type).toBe('Text')
     expect(text.props.testID).toBe('home-screen-text')
+
+    expect(linkButton.type).toBe('LinkButton')
   })
 })

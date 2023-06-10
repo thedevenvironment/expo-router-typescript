@@ -2,7 +2,6 @@ import React from 'react'
 import { create, type ReactTestRendererJSON } from 'react-test-renderer'
 import RootLayout from 'src/layouts/RootLayout'
 
-jest.mock('src/hooks/useAppLoading', () => () => true)
 jest.mock('expo-router', () => ({ Stack: 'Stack' }))
 
 describe('src/screens/RootLayout', () => {

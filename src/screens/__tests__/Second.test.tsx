@@ -6,6 +6,7 @@ import Second from 'src/screens/Second'
 
 jest.mock('expo-router', () => ({ Stack: { Screen: 'Screen' } }))
 jest.mock('src/components/LinkButton', () => 'LinkButton')
+jest.mock('src/hooks/useCacheAssets', () => () => true)
 
 describe('src/screens/Second', () => {
   const SecondComponent = (
@@ -16,13 +17,14 @@ describe('src/screens/Second', () => {
 
   it('renders correctly', () => {
     const second = create(SecondComponent).toJSON() as ReactTestRendererJSON
-    const screen = second.children![0] as ReactTestRendererJSON
-    const title = second.children![1] as ReactTestRendererJSON
-    const text = second.children![2] as ReactTestRendererJSON
-    const linkButton = second.children![3] as ReactTestRendererJSON
+    const layout = second.children![0] as ReactTestRendererJSON
+    const screen = layout.children![0] as ReactTestRendererJSON
+    const title = layout.children![1] as ReactTestRendererJSON
+    const text = layout.children![2] as ReactTestRendererJSON
+    const linkButton = layout.children![3] as ReactTestRendererJSON
 
     expect(second.type).toBe('View')
-    expect(second.props.testID).toBe('second-screen')
+    expect(second.props.testID).toBe('second-screen-layout')
 
     expect(screen.type).toBe('Screen')
 
@@ -31,5 +33,7 @@ describe('src/screens/Second', () => {
 
     expect(text.type).toBe('Text')
     expect(text.props.testID).toBe('second-screen-text')
+
+    expect(linkButton.type).toBe('LinkButton')
   })
 })

@@ -1,4 +1,4 @@
-import useAppLoading from 'src/hooks/useAppLoading'
+import useCacheAssets from 'src/hooks/useCacheAssets'
 
 jest.mock('expo-font', () => ({
   useFonts: jest.fn(() => [true, true])
@@ -15,10 +15,10 @@ jest.mock('react', () => ({
   useState: jest.fn(() => [true, jest.fn()])
 }))
 
-describe('src/hooks/useAppLoading', () => {
+describe('src/hooks/useCacheAssets', () => {
   it('should return appLoaded', () => {
-    const appLoaded = useAppLoading()
+    const areAssetsCached = useCacheAssets()
 
-    expect(appLoaded).toBe(true)
+    expect(areAssetsCached).toBe(true)
   })
 })

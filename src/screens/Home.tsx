@@ -1,22 +1,25 @@
 import styled from 'styled-components/native'
 import { Stack } from 'expo-router'
 import LinkButton from 'src/components/LinkButton'
+import ScreenLayout from 'src/layouts/ScreenLayout'
 
 export default function HomeScreen() {
   return (
-    <S.Wrapper testID="home-screen">
-      <Stack.Screen options={{ title: 'Home Screen', headerShown: false }} />
+    <ScreenLayout testID="home-screen-layout">
+      <S.Content testID="home-screen-content">
+        <Stack.Screen options={{ title: 'Home Screen', headerShown: false }} />
 
-      <S.Title testID="home-screen-title">🏠 Home Screen 🏠</S.Title>
-      <S.Text testID="home-screen-text">Go to src/screens/Home.tsx to edit</S.Text>
+        <S.Title testID="home-screen-title">🏠 Home Screen 🏠</S.Title>
+        <S.Text testID="home-screen-text">Go to src/screens/Home.tsx to edit</S.Text>
 
-      <LinkButton href="/second" text="Go To Second Screen" />
-    </S.Wrapper>
+        <LinkButton href="/second" text="Go To Second Screen" />
+      </S.Content>
+    </ScreenLayout>
   )
 }
 
 const S = {
-  Wrapper: styled.View`
+  Content: styled.View`
     flex: 1;
     align-items: center;
     justify-content: center;
