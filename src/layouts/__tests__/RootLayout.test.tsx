@@ -10,6 +10,6 @@ describe('src/screens/RootLayout', () => {
   it('renders correctly', () => {
     const RootLayout = create(RootLayoutComponent).toJSON() as ReactTestRendererJSON
 
-    expect(RootLayout.type).toBe('View')
+    expect(RootLayout.type).toBe('RCTSafeAreaView')
   })
 })

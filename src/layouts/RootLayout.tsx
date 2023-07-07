@@ -19,7 +19,7 @@ export default function RootLayout() {
 }
 
 const S = {
-  AppWrapper: styled.View`
+  AppWrapper: styled.SafeAreaView`
     flex: 1;
     flex-direction: column;
     background-color: ${appTheme.background};
