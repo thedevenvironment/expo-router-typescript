@@ -19,6 +19,7 @@
     "web": "expo start --web --no-dev --host localhost --port 3000"
   },
   "overrides": {
+    "expo-constants": "~14.2.1",
     "json5": ">2.2.2",
     "optionator": ">0.9.1",
     "semver": ">=7.5.2",
