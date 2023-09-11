@@ -11,7 +11,7 @@ export default function RootLayout() {
       <StatusBar style="light" />
       <S.AppWrapper>
         <NavProvider value={navTheme}>
-          <Stack />
+          <Stack screenOptions={{ headerShown: false }} />
         </NavProvider>
       </S.AppWrapper>
     </ThemeProvider>

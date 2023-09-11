@@ -7,7 +7,7 @@ export default function HomeScreen() {
   return (
     <ScreenLayout testID="home-screen-layout">
       <S.Content testID="home-screen-content">
-        <Stack.Screen options={{ title: 'Home Screen', headerShown: false }} />
+        <Stack.Screen options={{ title: 'Home Screen' }} />
 
         <S.Title testID="home-screen-title">🏠 Home Screen 🏠</S.Title>
         <S.Text testID="home-screen-text">Go to src/screens/Home.tsx to edit</S.Text>

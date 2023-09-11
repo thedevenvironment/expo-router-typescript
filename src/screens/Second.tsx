@@ -7,7 +7,7 @@ export default function SecondScreen() {
   return (
     <ScreenLayout testID="second-screen-layout">
       <S.Content testID="second-screen-content">
-        <Stack.Screen options={{ title: 'Second Screen', headerShown: false }} />
+        <Stack.Screen options={{ title: 'Second Screen' }} />
 
         <S.Title testID="second-screen-title">🥈 Second Screen 🥈</S.Title>
         <S.Text testID="second-screen-text">Go to src/screens/Second.tsx to edit</S.Text>
