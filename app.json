@@ -10,9 +10,7 @@
       "image": "./src/assets/images/splash.png",
       "backgroundColor": "#222"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": false
     },
@@ -20,14 +18,14 @@
       "adaptiveIcon": {
         "foregroundImage": "./src/assets/images/app-icon.png",
         "backgroundColor": "#222"
-      }
+      },
+      "package": "com.haytherecharlie.exporoutertypescript"
     },
     "web": {
       "favicon": "./src/assets/images/app-icon.png",
       "bundler": "metro"
     },
-    "plugins": [
-      "expo-router"
-    ]
+    "plugins": ["expo-router"],
+    "extra": { "router": { "origin": false } }
   }
 }

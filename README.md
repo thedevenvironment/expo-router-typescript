@@ -24,10 +24,10 @@ Two sample screens have been created, so everything will run out of the box. Als
 <a name="#folder-structure"></a>
 ## 2. Folder Structure
 
-a. `App` Directory:
+a. `app` Directory:
 - This folder is used at the file based router. Any file that lives here will be converted to a route for the application. [Learn More](https://expo.github.io/router/docs/)
 
-b. `Src` Directory:
+b. `src` Directory:
 
 - This is where the application logic will live. 
 
@@ -35,11 +35,13 @@ b. `Src` Directory:
 
 - The `components` folder is where reusable react components will live. 
 
+- The `config` folder is where you can place constants for your application.
+
 - The `hooks` folder has a `useAppLoading` hook that handles the logic of loading assets and displaying the spinner. 
 
-- The `layouts` folder is where the view wrapper logic lives.
+- The `types` folder is where your global and local types will live.
 
-- The `screens` Folder maps 1:1 with the routes in the `app` directory. The `/` path points to the `Home.tsx` screen, and then `/second` points to the `Second.tsx` screen. If you don't like this structure, you can move the component logic directly into the .tsx files in the app directly, however this provides a more robust solution.
+- The `utils` folder is a place to put all your reusable functions.
 
 <a name="#getting-started"></a>
 ## 3. Getting Started
@@ -51,7 +53,7 @@ git clone git@github.com:thedevenvironment/expo-router-typescript.git
 
 b. Install dependencies:
 ```
-npm ci
+npm run setup
 ```
 
 c. Start the dev server:
@@ -59,7 +61,9 @@ c. Start the dev server:
 npm run dev
 ```
 
-d. When prompted, choose which platform to run on:
+d. Press `s` to switch to expo Go
+
+e. Choose your platform 
 - `a` - android
 - `i` - ios
 - `w` - web

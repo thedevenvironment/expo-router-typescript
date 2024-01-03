@@ -1,4 +1,4 @@
-import { dimensions } from 'src/assets/styles/dimensions'
+import { dimensions } from 'src/utils/dimensions'
 
 jest.mock('react-native', () => ({ Dimensions: { get: jest.fn(() => ({ height: 1000, width: 1000 })) } }))
 

@@ -3,17 +3,14 @@ module.exports = function (api) {
   return {
     presets: ['babel-preset-expo'],
     plugins: [
-      '@babel/plugin-proposal-export-namespace-from',
-      'react-native-reanimated/plugin',
+      // Expo Router
       require.resolve('expo-router/babel'),
-      [
-        'module-resolver',
-        {
-          alias: {
-            src: './src'
-          }
-        }
-      ]
+      // Compile Exported Namespaces
+      '@babel/plugin-proposal-export-namespace-from',
+      // React Native Reanimated
+      'react-native-reanimated/plugin',
+      // Use Absolute Imports
+      ['module-resolver', { alias: { src: './src' } }]
     ]
   }
 }

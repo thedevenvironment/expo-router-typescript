@@ -1,6 +1,6 @@
 import styled from 'styled-components/native'
 import { ActivityIndicator } from 'react-native'
-import { appTheme } from 'src/assets/styles/theme'
+import { appTheme } from 'src/config/theme'
 
 export default function Spinner() {
   return (

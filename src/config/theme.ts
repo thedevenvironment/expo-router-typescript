@@ -1,16 +1,23 @@
-import type { DefaultTheme } from 'styled-components'
-import { dimensions, height, width } from 'src/assets/styles/dimensions'
+import { dimensions, height, width } from 'src/utils/dimensions'
 
-export const appTheme: DefaultTheme = {
+/**
+ * Theme For Styled Components
+ * -
+ */
+export const appTheme = {
   background: '#222',
   primary: '#FFF',
   secondary: '#CCC',
   highlight: '#FF2353',
-  dimensions,
+  size: dimensions,
   windowHeight: `${height}px`,
   windowWidth: `${width}px`
 }
 
+/**
+ * Theme For Expo Navigation Header
+ * -
+ */
 export const navTheme = {
   dark: false,
   colors: {
