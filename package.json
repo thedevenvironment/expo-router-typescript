@@ -13,7 +13,7 @@
     "publish:web": "firebase deploy --only hosting",
     "serve:app": "expo start --dev-client",
     "serve:web": "npx serve web-build --single",
-    "setup": "npm i --save expo@latest; npx expo install",
+    "setup": "npm i --save expo@^49; npx expo install",
     "start": "expo start",
     "test": "jest",
     "upgrade": "expo upgrade",
@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@react-navigation/native": "^6.1.9",
-    "expo": "^49.0.21",
+    "expo": "^49.0.22",
     "expo-dev-client": "~2.4.12",
     "expo-font": "~11.4.0",
     "expo-linking": "~5.0.2",
