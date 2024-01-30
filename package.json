@@ -13,8 +13,8 @@
     "publish:web": "firebase deploy --only hosting",
     "serve:app": "expo start --dev-client",
     "serve:web": "npx serve web-build --single",
-    "setup": "npm i --save expo@^50; npx expo install",
-    "start": "expo start",
+    "setup": "npm ci --silent",
+    "start": "expo start --go",
     "test": "jest",
     "upgrade": "expo upgrade",
     "web": "expo start --web --no-dev --host localhost --port 3000"
@@ -43,6 +43,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.23.7",
+    "@babel/plugin-proposal-export-namespace-from": "^7.18.9",
     "@testing-library/jest-native": "^5.4.3",
     "@testing-library/react-native": "^12.4.3",
     "@types/jest": "^29.5.11",
