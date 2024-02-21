@@ -2,13 +2,15 @@
 
 @thedevenviroment
 
-[__1. Introduction__](#introduction)
+**Table of content:**
 
-[__2. Folder Structure__](#folder-structure)
+[__1. Introduction__](#1-introduction)
 
-[__3. Getting Started__](#getting-started)
+[__2. Folder Structure__](#2-folder-structure)
 
-[__4. Further Reading__](#further-reading)
+[__3. Getting Started__](#3-getting-started)
+
+[__4. Further Reading__](#4-further-reading)
 
 ---
 
