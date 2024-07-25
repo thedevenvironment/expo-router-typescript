@@ -1,78 +1,65 @@
-# Expo Router Typescript
-
-@thedevenviroment
-
-[__1. Introduction__](#introduction)
-
-[__2. Folder Structure__](#folder-structure)
-
-[__3. Getting Started__](#getting-started)
-
-[__4. Further Reading__](#further-reading)
+![Expo Router Typescript](https://thedevenvironment.com/expo-router-typescript.png)
 
 ---
 
-<a name="#introduction"></a>
-## 1. Introduction
+**INTRODUCTION**
 
-This repo is a scaffolding of an `Expo` application that uses `Expo Router` and it's file based routing capibilities. It has all the necessary packages needed to just start the application and begin adding routes.  
+This repo is a scaffolding of an Expo application that uses Expo Router and it's file based routing capibilities. It has all the necessary packages needed to just start the application and begin adding routes.
 
-The reason it exists is to mitigate the amount of work needed to add typescript, jest, absolute imports and eslint into the traditional quickstart that the `create-expo-app` CLI command provides. 
+The reason it exists is to mitigate the amount of work needed to add typescript, jest, absolute imports and eslint into the traditional quickstart that the "create-expo-app" CLI command provides.
 
-Two sample screens have been created, so everything will run out of the box. Also a number of useful scripts have been created in the package.json that allow the ability to run, build, test, lint and serve the application. 
+Two sample screens have been created, so everything will run out of the box. Also a number of useful scripts have been created in the package.json that allow the ability to run, build, test, lint and serve the application.
 
-<a name="#folder-structure"></a>
-## 2. Folder Structure
+---
 
-a. `app` Directory:
-- This folder is used at the file based router. Any file that lives here will be converted to a route for the application. [Learn More](https://expo.github.io/router/docs/)
+**FOLDER STRUCTURE**
 
-b. `src` Directory:
+- `src`: The main directory of the application.
 
-- This is where the application logic will live. 
+  - `app`: Folder based routing directory.
 
-- The `assets` folder hosts images, fonts and base styles.
+  - `assets`: Images, fonts, sounds, etc.
 
-- The `components` folder is where reusable react components will live. 
+  - `components`: Reusable React components.
 
-- The `config` folder is where you can place constants for your application.
+  - `config`: Shared configuration values.
 
-- The `hooks` folder has a `useAppLoading` hook that handles the logic of loading assets and displaying the spinner. 
+  - `hooks`: Reusable hooks.
 
-- The `types` folder is where your global and local types will live.
+  - `types`: Global and local typings.
 
-- The `utils` folder is a place to put all your reusable functions.
+  - `utils`: Helpers and reusable methods.
 
-<a name="#getting-started"></a>
-## 3. Getting Started
+---
 
-a. Clone this repo to your local machine:
-```
+**GETTING STARTED**
+
+```bash
+# Clone Repo
 git clone git@github.com:thedevenvironment/expo-router-typescript.git
 ```
 
-b. Install dependencies:
-```
+```bash
+# Install Dependencies
 npm run setup
 ```
 
-c. Start the dev server:
-```
+```bash
+# Start The Dev Server
 npm run dev
+
+# Press 's' to switch to dev build
+# Press 'a' to open Android simulator
+# Press 'i' to open iOS simulator
+# Press 'w' to open web browser
 ```
 
-d. Press `s` to switch to expo Go
+---
 
-e. Choose your platform 
-- `a` - android
-- `i` - ios
-- `w` - web
+**LEARN MORE**
 
-<a name="#further-reading"></a>
-## 4. Further Reading:
+[Expo Documentation](https://docs.expo.dev/tutorial/introduction/)
 
-- [Expo Router Docs](https://expo.github.io/router/docs/)
+[Expo Router Documentation](https://expo.github.io/router/docs/)
 
-- [React Navigation Docs](https://reactnavigation.org/docs/getting-started)
-
-- [Expo Docs](https://docs.expo.dev/tutorial/introduction/)
+[React Navigation Documentation](https://reactnavigation.org/docs/getting-started)
