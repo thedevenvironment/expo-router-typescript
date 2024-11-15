@@ -26,8 +26,6 @@ Two sample screens have been created, so everything will run out of the box. Als
 
   - `hooks`: Reusable hooks.
 
-  - `types`: Global and local typings.
-
   - `utils`: Helpers and reusable methods.
 
 ---

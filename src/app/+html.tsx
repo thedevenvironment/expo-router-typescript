@@ -1,4 +1,5 @@
 import type { PropsWithChildren } from 'react'
+import { ScrollViewStyleReset } from 'expo-router/html'
 
 export default function Root({ children }: PropsWithChildren) {
   return (
@@ -31,6 +32,8 @@ export default function Root({ children }: PropsWithChildren) {
         <meta property="twitter:title" content="Expo Router Typescript" />
         <meta property="twitter:description" content="An expo app built using Expo Router Typescript" />
         <meta property="twitter:image" content="https://yourdomain.com/og-image.jpg" />
+
+        <ScrollViewStyleReset />
       </head>
       <body>{children}</body>
     </html>

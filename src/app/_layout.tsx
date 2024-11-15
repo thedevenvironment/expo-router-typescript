@@ -2,12 +2,12 @@ import 'expo-dev-client'
 import { ThemeProvider as NavProvider } from '@react-navigation/native'
 import { Slot } from 'expo-router'
 import { StatusBar } from 'expo-status-bar'
-import styled, { ThemeProvider, type DefaultTheme } from 'styled-components/native'
+import styled, { ThemeProvider } from 'styled-components/native'
 import { appTheme, navTheme } from 'src/config/theme'
 
 export default function AppLayout() {
   return (
-    <ThemeProvider theme={appTheme as DefaultTheme}>
+    <ThemeProvider theme={appTheme}>
       <StatusBar style="light" />
       <S.AppWrapper>
         <NavProvider value={navTheme}>

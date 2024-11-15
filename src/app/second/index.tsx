@@ -5,7 +5,7 @@ import ScreenLayout from 'src/components/ScreenLayout'
 
 export default function SecondScreen() {
   return (
-    <ScreenLayout testID="second-screen-layout">
+    <ScreenLayout title="Second">
       <S.Content testID="second-screen-content">
         <Stack.Screen options={{ title: 'Second Screen' }} />
 
@@ -23,19 +23,14 @@ const S = {
     flex: 1;
     align-items: center;
     justify-content: center;
+    gap: 10px;
   `,
   Title: styled.Text`
-    color: ${(p) => p.theme.primary};
-    font-family: helvetica;
-    font-weight: 900;
-    font-size: ${(p) => p.theme.size(200, 'px')};
-    margin-bottom: ${(p) => p.theme.size(10, 'px')};
+    font-size: ${(p) => p.theme.size(150, 'px')};
   `,
   Text: styled.Text`
     color: ${(p) => p.theme.primary};
-    font-family: helvetica;
-    font-weight: 600;
+    font-family: madeRegular;
     font-size: ${(p) => p.theme.size(15, 'px')};
-    margin-bottom: ${(p) => p.theme.size(15, 'px')};
   `
 }

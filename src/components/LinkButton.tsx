@@ -36,6 +36,6 @@ const S = {
   `,
   LinkText: styled.Text`
     color: ${(p) => p.theme.highlight};
-    font-weight: 600;
+    font-family: madeBold;
   `
 }

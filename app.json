@@ -6,13 +6,16 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./src/assets/images/app-icon.png",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
     "splash": {
       "image": "./src/assets/images/splash.png",
       "backgroundColor": "#222"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "experiments": {
+      "reactServerFunctions": false
+    },
+    "assetBundlePatterns": ["assets/*"],
     "ios": {
       "supportsTablet": false
     },
@@ -25,12 +28,10 @@
     },
     "web": {
       "favicon": "./src/assets/images/app-icon.png",
+      "output": "static",
       "bundler": "metro"
     },
-    "plugins": [
-      "expo-router",
-      "expo-font"
-    ],
+    "plugins": ["expo-router", "expo-font"],
     "extra": {
       "router": {
         "origin": false
