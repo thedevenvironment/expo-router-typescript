@@ -56,6 +56,8 @@ npm run dev
 
 **LEARN MORE**
 
+[App.json Documentation](https://docs.expo.dev/versions/latest/config/app/)
+
 [Expo Documentation](https://docs.expo.dev/tutorial/introduction/)
 
 [Expo Router Documentation](https://expo.github.io/router/docs/)
